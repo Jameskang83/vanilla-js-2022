@@ -80,16 +80,44 @@
 // console.log(plusResult)
 
 
-const age = 96;
-function calculateKrAge (ageOfForeigner) {
-    return ageOfForeigner + 2;
-}
+// const age = 96;
+// function calculateKrAge (ageOfForeigner) {
+//     return ageOfForeigner + 2;
+// }
 
-const KrAge = calculateKrAge(age);
-console.log(KrAge);
+// const KrAge = calculateKrAge(age);
+// console.log(KrAge);
 
 // const age = parseInt (prompt("How old are you?"));
+// console.log(isNaN(age));
+
+// const age = parseInt("hello");
 // console.log(age);
 
+// if (isNaN(age) || age < 0) {
+//     console.log("please wirte a real positive number");
+// } else if (age < 18) {
+//     // console.log("Thanks you for writing your age");
+//     console.log("you are too young.");
+// } else if (age >= 18 && age <= 50) {
+//     console.log("you can drink.");
+// } else if (age > 50 && age <= 80) {
+//     console.log("you shoud do a exercise.");
+// } else if (age > 80) {
+//     console.log("you can't drink.");
+// }
+
+// const title = document.getElementById("title");
+// // console.dir(title);
+
+// title.innerText = "got you!";
+// console.log(title.id);
+// console.log(title.className);
+
+// const hellos = document.getElementsByClassName("hello");
+// console.log(hellos);
+
+// const title = document.getElementsByTagName("h1");
+// console.log(title);
 
 
