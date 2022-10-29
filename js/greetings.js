@@ -2,6 +2,8 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const logoutBtnClick = document.querySelector("#logout");
+
 // const link = document.querySelector("a"); 자주가는 사이트
 
 const HIDDEN_CLASSNAME = "hidden";
@@ -18,6 +20,15 @@ function onLoginSumit(event) {
 function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    logoutBtnClick.classList.remove(HIDDEN_CLASSNAME);
+
+    function logOut() {
+        localStorage.removeItem(USERNAME_KEY);
+        loginForm.classList.remove(HIDDEN_CLASSNAME);
+        greeting.classList.add(HIDDEN_CLASSNAME);
+        logoutBtnClick.classList.add(HIDDEN_CLASSNAME);
+    }
+    logoutBtnClick.addEventListener("click", logOut);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -28,3 +39,7 @@ if (savedUsername === null) {
 } else {
     paintGreetings(savedUsername);
 }
+
+
+
+
