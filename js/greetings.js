@@ -9,7 +9,7 @@ const logoutBtnClick = document.querySelector("#logout");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
-function onLoginSumit(event) {
+function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const newUsername = loginInput.value;
@@ -35,7 +35,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", onLoginSumit);
+    loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     paintGreetings(savedUsername);
 }
