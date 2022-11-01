@@ -1,0 +1,59 @@
+.gogle-serach {
+    height:46px;
+    width: 385px;
+    border: solid 3px #7E5EF2;
+    border-radius: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #6A44F2;
+}
+
+#search-form {
+    height: 24px;
+}
+
+#search-form input {
+    width: 330px;
+    border: none;
+    outline: none;
+    padding-left: 4px;
+    color: #392d68;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#search-form input::placeholder {
+    color: #A2A2A2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.div-color {
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.colorpicker {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colorpicker:hover {
+    transform: scale(1.2);
+    filter: brightness(110%);
+}
+
+.colorpicker:active {
+    transform: scale(.95);
+    filter: brightness(90%);
+}

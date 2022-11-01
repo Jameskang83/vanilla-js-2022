@@ -1,3 +1,23 @@
+/* Settings */
+@import "reset.css";
+
+/* Screens */
+@import "main-screen.css";
+@import "right-screen.css";
+@import "left-screen.css";
+@import "calendar.css";
+@import "dycalendar.css";
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	scroll-behavior: smooth;
+  }
+
 
 .hidden {
     display: none;
@@ -7,8 +27,4 @@
     color: red;
     font-weight: bold;
     display: block;
-}
-
-img {
-    width: 500px;
 }

@@ -1,0 +1,23 @@
+
+.right-screen {
+    background-color: white;
+    display: flex;
+    width: 250px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: inset 1px 2px 20px #e4e4e4;
+}
+
+.to-do {
+    background-color: burlywood;
+    width: 200px;
+    height: 400px;
+}
+
+
