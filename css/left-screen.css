@@ -2,10 +2,30 @@
 .left-screen {
     background-color: white;
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
     width: 250px;
     height: 550px;
     /* margin-right: 10px; */
     padding: 20px;
-    /* border-radius: 10px; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     box-shadow: inset 1px 2px 20px #e4e4e4;
+}
+
+.news-header span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-under img {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.site-under__sign img {
+    width: 180px;
+    opacity: 0.8;
+    /* background-color: blue; */
 }

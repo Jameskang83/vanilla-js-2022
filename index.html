@@ -9,62 +9,78 @@
 </head>
 <body>
     <main>
+        <!-- News -->
         <section class="left-screen">
             <!-- 뉴스 -->
-            <div>
+            <div class="news-header">
                 <span>News</span>
             </div>
+            <div class="site-under">
+                <img src="img/kakao-ani.gif" />
+            </div>
+            <div class="site-under__sign">
+                <img src="img/ongoing_sign.png" />
+            </div>
         </section>
-        
+        <!-- Main  -->
         <section class="main-screen">
-           
-                <nav>
-                    <div>
-                        <span>음악 플레이</span>  
-                    </div>
-                    
-                    <div class="gogle-serach">
-                        <form id="search-form">
-                            <input required type="text" placeholder="Google Search"/>
-                            <i class="fas fa-search"></i>
-                        </form>
-                    </div>    
-
-                    <div>
-                        <form class="hidden" id="login-form">
-                            <input type="text" placeholder="What is your name?" required maxlength="15">
-                            <button>Lon In</button>
-                        </form>
-                        <h1 id="greeting" class="hidden"></h1>
-                        <button id="logout" class="clicked hidden">Lon Out</button>
-                    </div>    
-                </nav>
-                
-                <div class="info">           
-                    <div>
-                        <h2 id="clock">00:00:00</h2>
-                    </div>
-                    
-                    <div id="weather">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>    
-                <!--  랜덤 이미지 만들기 -->
-            
-                <div id="bg-img">
-                    <!-- <img src="img/0.jpg"/> -->
+            <!-- Music/Google serach/User/background/Date/Weather/Quotes-->
+            <nav>
+                <div>
+                    <span>음악 플레이</span>  
                 </div>
                 
-                <footer>
-                    <div id="quote">
-                        <span></span>
-                        <span></span>
+                <div class="gogle-serach">
+                    <form id="search-form">
+                        <input required type="text" placeholder="Search Google or type a URL"/>
+                    </form>
+                    <i class="fas fa-search"></i>
+                </div>    
+
+                <div>
+                    <div class="profile">
+                        <div>
+                            <img id="profile-photo" src="img/photo.png" />
+                        </div>
+                        
+                        <div>
+                            <form class="hidden" id="login-form">
+                                <input type="text" placeholder="Username" required maxlength="15">
+                                <button>Log</button>
+                            </form>
+                            <h1 id="greeting" class="hidden"></h1>
+                            <button id="logout" class="clicked hidden">Log Out</button>
                     </div>
-                </footer>
-           
+                    </div>
+
+                    
+                </div>    
+            </nav>
+            
+            <div class="info">           
+                <div>
+                    <h1 id="clock">00:00</h1>
+                </div>
+                
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>    
+            <!--  랜덤 이미지 만들기 -->
+        
+            <div id="bg-img">
+                <!-- <img src="img/0.jpg"/> -->
+            </div>
+            
+            <footer>
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </footer>
         </section>
-    
+        <!-- To do / Calendar -->
         <section class="right-screen">
             <!-- toDo list and 달력 -->
             <div class="to-do">
@@ -78,12 +94,7 @@
                 <div id="dycalendar"></div>
             </div>
         </section>
-
-
-
     </main>
-
-
 
     <script src="js/background.js"></script>
     <script src="js/greetings.js"></script>
@@ -92,6 +103,7 @@
     <script src="js/weather.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/dycalendar.js"></script>
+    <script src="js/search.js"></script>
     <script>
         dycalendar.draw({
             target: "#dycalendar",
