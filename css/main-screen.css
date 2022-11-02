@@ -10,10 +10,8 @@ html,body {
 body {
     margin-top: 80px;
     display: flex;
-    /* align-self: center; */
     justify-content: center;
     background-color: skyblue;
-
 }
 
 main {
@@ -35,47 +33,51 @@ main {
     border-radius: 15px;
     box-shadow: inset 1px 2px 20px #e4e4e4;
     height: 630px;
-
 }
 
 img {
     width: 700px;
     z-index: -1;
     border-radius: 10px;
-
 }
 
 #bg-img {
-    /* background-color: white; */
-    /* width: 700px; */
-    /* position: relative; */
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    
-
 }
 
 nav {
-    height: 100px;
+    height: 120px;
     width: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: green; */
-    padding: 20px;
+    background-color: green;
 }
 
+
+/* Photo/ Login / Out / Edit */
 .profile {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 180px;
+    height: 120px;
+    background-color: yellow;
 }
 
-#profile-photo {
-    width: 75px;
+#profile-photo__kakao {
+    width: 90px;
     border-radius: 50%;
     border: 2px solid white;
 }
+
+.username-form {
+    background-color: blue;
+    width: 180px;
+}
+
 
 #login-form {
     
@@ -85,9 +87,22 @@ nav {
     border: none;
     outline: none;
     width: 120px;
-    
 }
 
+.logout-position {
+    position: absolute;
+}
+
+#logout {
+ position: relative;
+ left: 70px;
+}
+
+#modify {
+    font-size: 15px;
+}
+
+/* weather */
 .info {
     display: flex;
     flex-direction: column;

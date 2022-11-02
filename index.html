@@ -37,24 +37,28 @@
                     <i class="fas fa-search"></i>
                 </div>    
 
-                <div>
-                    <div class="profile">
-                        <div>
-                            <img id="profile-photo" src="img/photo.png" />
-                        </div>
+                <div class="profile">
                         
-                        <div>
-                            <form class="hidden" id="login-form">
-                                <input type="text" placeholder="Username" required maxlength="15">
-                                <button>Log</button>
-                            </form>
-                            <h1 id="greeting" class="hidden"></h1>
-                            <button id="logout" class="clicked hidden">Log Out</button>
+                    <div class="profile-photo">
+                        <img id="profile-photo__kakao" src="img/photo.png" />
                     </div>
+                    
+                    <div class="username-form">
+                        <form class="hidden" id="login-form">
+                            <input type="text" placeholder="Username" required maxlength="15">
+                            <button>In</button>
+                        </form>
+                        <h1 id="greeting" class="hidden"></h1>
+                        <div id="modify" class="hidden">
+                            <i class="fa fa-pen"></i>
+                        </div>
                     </div>
 
-                    
-                </div>    
+                    <div class="logout-position">
+                        <button id="logout" class="clicked hidden">Out</button>
+                    </div>
+                </div>
+
             </nav>
             
             <div class="info">           
