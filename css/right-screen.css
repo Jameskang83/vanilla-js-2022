@@ -16,9 +16,41 @@
 }
 
 .to-do {
-    background-color: burlywood;
+    margin-top: 10px;
+    /* background-color: burlywood; */
     width: 200px;
     height: 400px;
 }
 
+.Todo-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(90,136,245);
+}
 
+#todo-form {
+    margin-bottom: 10px;
+
+}
+
+#todo-form input{
+    border: none;
+    outline: none;
+    /* background-color: white; */
+    border-bottom: 3px solid tomato;
+    /* text-align: start; */
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#todo-form input::placeholder {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}

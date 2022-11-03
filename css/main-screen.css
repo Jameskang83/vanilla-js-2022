@@ -52,7 +52,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    /* background-color: green; */
 }
 
 
@@ -64,42 +64,72 @@ nav {
     align-items: center;
     width: 180px;
     height: 120px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #profile-photo__kakao {
     width: 90px;
     border-radius: 50%;
     border: 2px solid white;
+    margin-bottom: 2px;
 }
-
-.username-form {
-    background-color: blue;
-    width: 180px;
-}
-
 
 #login-form {
-    
+    width: 170px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 #login-form input {
+    width: 115px;
     border: none;
     outline: none;
-    width: 120px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#login-form button {
+    opacity: 0.7;
+}
+
+.greeting-form {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    /* border-top: 2px solid skyblue; */
+    /* background-color: white; */
+    /* border-radius: 10px; */
+    /* padding: 5px; */
+    /* font-size: 20px; */
+}
+
+#greeting {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+    /* text-decoration: underline; */
+    /* background-color: blue; */
+    text-shadow: 1px 1px 2px skyblue, 0 0 1em yellow, 0 0 0.2em blue;
+}
+
+#modify {
+    opacity: 0.7;
 }
 
 .logout-position {
     position: absolute;
+    /* background-color: black; */
+    /* width: 20px;   */
 }
 
 #logout {
- position: relative;
- left: 70px;
-}
-
-#modify {
-    font-size: 15px;
+    position: relative;
+    left: 70px;
+    color: whitesmoke;
 }
 
 /* weather */

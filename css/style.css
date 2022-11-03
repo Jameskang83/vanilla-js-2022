@@ -30,3 +30,8 @@
     font-weight: bold;
     display: block;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+}

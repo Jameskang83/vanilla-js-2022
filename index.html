@@ -46,16 +46,21 @@
                     <div class="username-form">
                         <form class="hidden" id="login-form">
                             <input type="text" placeholder="Username" required maxlength="15">
-                            <button>In</button>
+                            <button><i class="fas fa-sign-in-alt fa-lg"></i></button>         
                         </form>
-                        <h1 id="greeting" class="hidden"></h1>
-                        <div id="modify" class="hidden">
-                            <i class="fa fa-pen"></i>
+                        
+                        <div class="greeting-form">
+                            <div id="greeting" class="hidden"></div>
+                            <button id="modify" class="hidden">
+                                <i class="far fa-edit fa-lg"></i>
+                            </button>
                         </div>
                     </div>
 
                     <div class="logout-position">
-                        <button id="logout" class="clicked hidden">Out</button>
+                        <button id="logout" class="clicked hidden">
+                            <i class="far fa-times-circle fa-2x"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -87,9 +92,12 @@
         <!-- To do / Calendar -->
         <section class="right-screen">
             <!-- toDo list and 달력 -->
+            <div class="Todo-header">
+                <span>To-Do List</span>
+            </div>
             <div class="to-do">
                 <form id="todo-form">
-                    <input type="text" placeholder="Write a To Do and Press Enter"/>
+                    <input type="text" placeholder="Add a new task"/>
                 </form>
                 <ul id="todo-list"></ul>
             </div>

@@ -17,11 +17,13 @@
 .news-header span {
     font-size: 20px;
     font-weight: bold;
+    color: rgb(90,136,245);
 }
 
 .site-under img {
     width: 200px;
     opacity: 0.6;
+
 }
 
 .site-under__sign img {
