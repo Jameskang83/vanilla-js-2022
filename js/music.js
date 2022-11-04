@@ -69,7 +69,7 @@ const musics = [
     "Happy Day",
     "Jazz Happy",
     "Motivational Epic Music",
-    "Relaxing Music",
+    "Sweet Love",
 ];
 
 const musicTitle = document.querySelector(".title-box span");
