@@ -13,7 +13,7 @@
         <section class="left-screen">
             <!-- 뉴스 -->
             <div class="news-header">
-                <span>News</span>
+                <span>Wathchlists</span>
             </div>
             <div class="site-under">
                 <img src="img/kakao-ani.gif" />
@@ -26,8 +26,23 @@
         <section class="main-screen">
             <!-- Music/Google serach/User/background/Date/Weather/Quotes-->
             <nav>
-                <div>
-                    <span>음악 플레이</span>  
+                <div id="player">
+                    <div id="arrowbtn">
+                        <i id="btn1" class="fas fa-step-backward fa-lg"></i>
+                        <div id="music">
+                            <span id="start" class="hidden">
+                                <i class="fas fa-play fa-lg"></i>
+                            </span>
+                            <span id="pause" class="hidden">
+                                <i class="fas fa-pause fa-lg"></i>
+                            </span>
+                        </div>
+                        <i id="btn2" class="fas fa-step-forward fa-lg"></i>
+                    </div>
+                    <audio id="musicplayer" src="musics/0.mp3"></audio>
+                    <div id="title">
+                        <div class="title-box"><span></span></div>
+                    </div>
                 </div>
                 
                 <div class="gogle-serach">
@@ -72,8 +87,8 @@
                 </div>
                 
                 <div id="weather">
-                    <span></span>
-                    <span></span>
+                    <h1 class="city"></h1>
+                    <h1 class="weather"></h1>
                 </div>
             </div>    
             <!--  랜덤 이미지 만들기 -->
@@ -116,6 +131,7 @@
     <script src="js/quotes.js"></script>
     <script src="js/dycalendar.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/music.js"></script>
     <script>
         dycalendar.draw({
             target: "#dycalendar",

@@ -25,12 +25,6 @@
     display: none;
 }
 
-#quote span:first-child {
-    color: red;
-    font-weight: bold;
-    display: block;
-}
-
 button {
   border: none;
   background-color: transparent;

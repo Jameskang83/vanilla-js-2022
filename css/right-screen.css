@@ -53,4 +53,24 @@
 li {
     font-size: 20px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    display: block;
+}
+
+#todo-list {
+    height: auto;
+    overflow: auto;
+    /* background-color: blue; */
+    height: 220px;
+    /* display: flex; */
+
+}
+
+#trash {
+    opacity: 0.5;
+    font-size: 15px;
 }

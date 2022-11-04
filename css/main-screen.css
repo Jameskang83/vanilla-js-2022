@@ -1,6 +1,7 @@
 
-html,body {
-    width: 100%;
+html {
+    width: auto;
+    height: auto;
 }
 
 * {
@@ -55,6 +56,32 @@ nav {
     /* background-color: green; */
 }
 
+/* music */
+#player {
+    width: 230px;
+    /* background-color: beige; */
+}
+
+#arrowbtn {
+    display: flex;
+    width: 180px;
+    /* background-color: blue; */
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+#title {
+    margin-left: 25px;
+}
+
+#title span {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    opacity: 0.7;
+}
 
 /* Photo/ Login / Out / Edit */
 .profile {
@@ -111,9 +138,10 @@ nav {
     font-weight: bold;
     color: white;
     margin-right: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     /* text-decoration: underline; */
     /* background-color: blue; */
-    text-shadow: 1px 1px 2px skyblue, 0 0 1em yellow, 0 0 0.2em blue;
+    /* text-shadow: 1px 1px 2px skyblue, 0 0 1em yellow, 0 0 0.2em blue; */
 }
 
 #modify {
@@ -148,11 +176,37 @@ nav {
     color: white;
     position: relative;
     font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
 }
 
+.city, .weather {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+
 footer {
-    margin-top: 10px;
+    /* margin: 10px; */
     text-align: center;
     /* height: 50px; */
     /* background-color: blue; */
+}
+
+#quote span:first-child {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#quote span:last-child {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.5;
 }
