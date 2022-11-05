@@ -2,12 +2,10 @@
 .left-screen {
     background-color: white;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     width: 250px;
     height: 550px;
-    /* margin-right: 10px; */
     padding: 20px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -23,11 +21,9 @@
 .site-under img {
     width: 200px;
     opacity: 0.6;
-
 }
 
 .site-under__sign img {
     width: 180px;
     opacity: 0.8;
-    /* background-color: blue; */
 }

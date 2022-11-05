@@ -65,8 +65,8 @@ nextBtn.addEventListener("click", handleNextBtn);
 pervBtn.addEventListener("click", handlePrevBtn);
 
 const musics = [
-    "Lofi Study",
     "Happy Day",
+    "Lofi Study",
     "Jazz Happy",
     "Motivational Epic Music",
     "Sweet Love",

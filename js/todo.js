@@ -38,13 +38,11 @@ function lineThrough(event) {
     saveToDos();
 }
 
-
-
 function paintToDo(newTodo) {
     const li = document.createElement("li");
     li.id = newTodo.id;
     const span = document.createElement("span");
-    span.innerText = newTodo.text;
+    span.innerText = `□ ${newTodo.text}`;
     span.classList.add("item");
     const button = document.createElement("button");
     button.classList.add("delete");
@@ -86,6 +84,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 if (savedToDos != null) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
-    parsedToDos.forEach(paintToDo);
-}
+    parsedToDos.forEach(paintToDo); 
+} 
 

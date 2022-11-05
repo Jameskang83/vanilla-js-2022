@@ -18,6 +18,8 @@
             <div class="site-under">
                 <img src="img/kakao-ani.gif" />
             </div>
+            <h1>Study more...</h1>
+            <br>
             <div class="site-under__sign">
                 <img src="img/ongoing_sign.png" />
             </div>
@@ -28,7 +30,9 @@
             <nav>
                 <div id="player">
                     <div id="arrowbtn">
-                        <i id="btn1" class="fas fa-step-backward fa-lg"></i>
+                        <div>
+                            <i id="btn1" class="fas fa-step-backward fa-lg"></i>
+                        </div>
                         <div id="music">
                             <span id="start" class="hidden">
                                 <i class="fas fa-play fa-lg"></i>
@@ -37,7 +41,9 @@
                                 <i class="fas fa-pause fa-lg"></i>
                             </span>
                         </div>
-                        <i id="btn2" class="fas fa-step-forward fa-lg"></i>
+                        <div>
+                            <i id="btn2" class="fas fa-step-forward fa-lg"></i>
+                        </div>
                     </div>
                     <audio id="musicplayer" src="musics/0.mp3"></audio>
                     <div id="title">
@@ -53,15 +59,15 @@
                 </div>    
 
                 <div class="profile">
-                        
                     <div class="profile-photo">
-                        <img id="profile-photo__kakao" src="img/photo.png" />
+                        <img class="hidden" id="profile-photo-0__kakao" src="img/photo-0.png" />
+                        <img class="hidden" id="profile-photo__kakao" src="img/photo.png" />
                     </div>
                     
                     <div class="username-form">
                         <form class="hidden" id="login-form">
                             <input type="text" placeholder="Username" required maxlength="15">
-                            <button><i class="fas fa-sign-in-alt fa-lg"></i></button>         
+                            <button class="login-icon"><i class="fas fa-sign-in-alt fa-lg"></i></button>         
                         </form>
                         
                         <div class="greeting-form">

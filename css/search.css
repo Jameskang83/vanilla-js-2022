@@ -1,6 +1,5 @@
 
 .gogle-serach {
-    /* height:40px; */
     border: solid 2px skyblue;
     background-color: white;
     display: flex;
@@ -12,14 +11,9 @@
     border-radius: 30px;
 }
 
-#search-form {
- 
-}
-
 #search-form input {
     border: none;
     outline: none;
-    /* padding-left: 4px; */
     color: rgb(48, 48, 48);
     font-size: 15px;
     font-weight: 300;
